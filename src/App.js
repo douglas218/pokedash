@@ -27,10 +27,12 @@ function App() {
     setPokemonList(pokemonDados);
   };
 
+  buscaPokemons();
+  
   return (
     <div className="App">
       {/* <Header /> */}
-      <button type="button" onClick={buscaPokemons}>Clique aqui para carregar</button>
+      {/* <button type="button" onClick={buscaPokemons}>Clique aqui para carregar</button> */}
       <Container fluid>
         <CardColumns>
           { /* Monta um "PokeCard" para cada Pokemon */
