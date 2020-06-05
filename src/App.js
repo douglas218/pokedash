@@ -5,6 +5,8 @@ import PokeCard from './components/PokeCard';
 import Header from './components/Header';
 import './App.css';
 
+var loaded = false;
+
 function App() {
   const [ pokemonList, setPokemonList ] = useState([]);
 
@@ -25,10 +27,13 @@ function App() {
 
     /* Armazena o resultado no state */
     setPokemonList(pokemonDados);
+
+    loaded = true;
   };
 
-  buscaPokemons();
-  
+  if (!loaded)
+    buscaPokemons();
+
   return (
     <div className="App">
       {/* <Header /> */}

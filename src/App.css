@@ -76,6 +76,10 @@ h1, h2, h3, h4, h5 {
   margin-bottom: 3px;
 }
 
+.poke-ability-name {
+  text-transform: capitalize;
+}
+
 /* 
  *
  *  POKECARDS
